@@ -35,8 +35,10 @@ window.addEventListener('load', function() {
     {frequency: Bb3, startTime: 6.5, duration: 0.5}
   ];
 
-  // Tocar as notas
-  notes.forEach(function(note) {
-    playTone(note.frequency, note.startTime, note.duration);
-  });
+  window.playSmokeOnTheWater = function() {
+    // Tocar as notas
+    notes.forEach(function(note) {
+      playTone(note.frequency, note.startTime, note.duration);
+    });
+  };
 });
